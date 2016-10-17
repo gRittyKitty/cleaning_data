@@ -1,4 +1,4 @@
-CodeBook
+#CodeBook
 
 The file that I have uploaded is tidyfile.txt and it can be read in using read.table("tidyfile.txt") so long as R has the appropriate working directory set.
 
@@ -7,11 +7,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 This data set uses the raw data from the above. It is however a processed data set. It has grouped the data by activity and subject; that is that are unique combinations of activity and subject for which the averages of the data were calculated.
 
-###activity
+#####activity
   This is the descriptive name of the activity as defined by activity_labels
-###subject
+#####subject
   Refers to the subject from the data. Source data is from subject_train.txt and subject_test.txt raw data
-###List of averaged data. Details can be found from the UCI data set above:
+#####List of averaged data. Details can be found from the UCI data set above:
 "3" "tBodyAcc.mean...X"
 "4" "tBodyAcc.mean...Y"
 "5" "tBodyAcc.mean...Z"
