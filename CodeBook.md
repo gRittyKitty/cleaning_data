@@ -5,7 +5,7 @@ The file that I have uploaded is tidyfile.txt and it can be read in using read.t
 For reference, all raw data was sourced from
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
 
-This data set uses the raw data from the above. It is however a processed data set. It has grouped the data by activity and subject; that is that are unique combinations of activity and subject for which the averages of the data were calculated.
+This data set uses the raw data from the above. It is however a processed data set. It has grouped the data by activity and subject; that is that are unique combinations of activity and subject for which the averages of the data were calculated. The comments in run_analysis.R goes through the step by step process.
 
 #####activity
   This is the descriptive name of the activity as defined by activity_labels
