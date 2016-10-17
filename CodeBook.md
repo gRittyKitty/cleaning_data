@@ -12,9 +12,13 @@ This data set uses the raw data from the above. It is however a processed data s
 #####subject
   Refers to the subject from the data. Source data is from subject_train.txt and subject_test.txt raw data
 #####List of averaged data. Details can be found from the UCI data set above:
+
 "3" "tBodyAcc.mean...X"
+
 "4" "tBodyAcc.mean...Y"
+
 "5" "tBodyAcc.mean...Z"
+
 "6" "tBodyAcc.std...X"
 "7" "tBodyAcc.std...Y"
 "8" "tBodyAcc.std...Z"
