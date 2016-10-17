@@ -15,7 +15,7 @@ library(dplyr)
 # I use fname as a temporary variable for the file name of what is read in
 core_path = "/users/apine/documents/datacourse/cleaningdata/uci_dataset/"
 fname <- paste(core_path,"train/X_train.txt",sep="")
-train_set <- read.table(fname, colClasses = "character") # this is just the training set for now but it will hold the entire set
+train_set <- read.table(fname) # this is just the training set for now but it will hold the entire set
 fname <- paste(core_path,"test/X_test.txt",sep="")
 test_set <- read.table(fname)
 # now combine the data sets into one dataframe
@@ -73,11 +73,13 @@ labeled_set <- merge(pruned_data,labels)
 #   *****
 #  Nearly all of this has already been done in the preceding steps
 # The one 'v' column has the descriptive labels that we just added
-colnames(labeled_set)[82] = "activity"
+labeled_set <- labeled_set[,-1] # have to get rid of the columnn of numbers
+colnames(labeled_set)[81] = "activity"
 
 # ****
 # labeled_set is the data set that has the data for #4
 # ****
-
-
+tidy_set = labeled_set %>% group_by(activity,subject) %>% summarise_each(funs(mean))
+fname = paste(core_path,"tidyfile.txt",sep="")
+write.table(tidy_set,fname)
 
